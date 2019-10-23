@@ -1,11 +1,12 @@
+Math.floor((Math.random() * 152) + 1)
 
 Promise.all([
-    axios.get('https://pokeapi.co/api/v2/pokemon/3/'),
-    axios.get('https://pokeapi.co/api/v2/pokemon/6/'),
-    axios.get('https://pokeapi.co/api/v2/pokemon/9/'),
-    axios.get('https://pokeapi.co/api/v2/pokemon/150/'),
-    axios.get('https://pokeapi.co/api/v2/pokemon/149/'),
-    axios.get('https://pokeapi.co/api/v2/pokemon/126/')
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${Math.floor((Math.random() * 152) + 1)}/`),
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${Math.floor((Math.random() * 152) + 1)}/`),
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${Math.floor((Math.random() * 152) + 1)}/`),
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${Math.floor((Math.random() * 152) + 1)}/`),
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${Math.floor((Math.random() * 152) + 1)}/`),
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${Math.floor((Math.random() * 152) + 1)}/`)
 ]).then(([res1, res2,res3,res4,res5,res6]) => {
 
     let resArr = [res1, res2,res3,res4,res5,res6]
